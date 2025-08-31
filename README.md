@@ -82,8 +82,8 @@ src/
 1. **Clone the repository:**
 
 ```bash
-git clone <repository-url>
-cd nz-honey-co
+git clone https://github.com/premasagarbontula/figma-dashboard
+cd Figma Dashboard
 ```
 
 2. **Install dependencies:**
