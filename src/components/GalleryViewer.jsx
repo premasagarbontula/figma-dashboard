@@ -3,6 +3,12 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import img1 from "../assets/manuka-honey-umf24-250g-carousel-1.png";
 import img2 from "../assets/manuka-honey-umf24-250g-carousel-2.png";
 import img3 from "../assets/manuka-honey-umf24-250g-carousel-3.png";
+import thumb_1 from "../assets/1-manuka-honey-web-24_-5.png";
+import thumb_2 from "../assets/1-manuka-honey-web-24.png";
+import thumb_3 from "../assets/1-manuka-honey-web-24_-2.png";
+import thumb_4 from "../assets/1-manuka-honey-web-24_-3.png";
+import thumb_5 from "../assets/1-manuka-honey-web-24_-4.png";
+import thumb_6 from "../assets/manuka-honig-umf-24-fruits.png";
 
 const images = [img1, img2, img3];
 
@@ -50,12 +56,12 @@ const GalleryViewer = () => {
       {/* Row of two images */}
       <div className="flex w-full pb-2 mt-3 gap-2">
         <img
-          src="src/assets/1-manuka-honey-web-24_-5.png"
+          src={thumb_1}
           alt="Thumb 1"
           className="w-1/2 object-cover rounded-lg"
         />
         <img
-          src="src/assets/1-manuka-honey-web-24.png"
+          src={thumb_2}
           alt="Thumb 2"
           className="w-1/2 object-cover rounded-lg"
         />
@@ -77,26 +83,26 @@ const GalleryViewer = () => {
       {/* Another two images row */}
       <div className="flex w-full pt-2 gap-2">
         <img
-          src="src/assets/1-manuka-honey-web-24_-2.png"
+          src={thumb_3}
           alt="Thumb 3"
           className="w-1/2 object-cover rounded-lg"
         />
         <img
-          src="src/assets/1-manuka-honey-web-24_-3.png"
+          src={thumb_4}
           alt="Thumb 4"
           className="w-1/2 object-cover rounded-lg"
         />
       </div>
 
       {/* Another two images row */}
-      <div className="flex w-full pt-2 gap-2">
+      <div className="flex w-full h-[10%] pt-2 gap-2">
         <img
-          src="src/assets/1-manuka-honey-web-24_-4.png"
+          src={thumb_5}
           alt="Thumb 5"
           className="w-1/2 object-cover rounded-lg"
         />
         <img
-          src="src/assets/manuka-honig-umf-24-fruits.png"
+          src={thumb_6}
           alt="Thumb 6"
           className="w-1/2 object-cover rounded-lg"
         />
