@@ -51,7 +51,7 @@ This project replicates the Figma design of NZ Honey Co.'s product pages. The go
 ---
 
 ## **Project Structure**
-
+```
 src/
 ├── assets/ # Images and icons
 ├── components/ # Reusable UI components
@@ -74,7 +74,7 @@ src/
 │ ├── Store.js
 │ └── cartSlice.js
 └── App.jsx
-
+```
 ---
 
 ## **Installation & Setup**
