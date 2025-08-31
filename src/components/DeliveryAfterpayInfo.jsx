@@ -1,4 +1,5 @@
 import { CiCircleInfo } from "react-icons/ci";
+import afterpayIcon from "../assets/afterpay-icon.png";
 
 const DeliveryAfterpayInfo = () => {
   return (
@@ -34,7 +35,7 @@ const DeliveryAfterpayInfo = () => {
         <div className="flex flex-wrap items-center gap-1 text-sm md:text-base text-[#4a4a4a] mt-1">
           <span>or 4 interest-free payments of $13.97 with</span>
           <img
-            src="src/assets/afterpay-icon.png"
+            src={afterpayIcon}
             alt="Afterpay"
             className="h-5 md:h-6 w-auto"
           />

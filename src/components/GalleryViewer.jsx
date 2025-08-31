@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import img1 from "../assets/manuka-honey-umf24-250g-carousel-1.png";
+import img2 from "../assets/manuka-honey-umf24-250g-carousel-2.png";
+import img3 from "../assets/manuka-honey-umf24-250g-carousel-3.png";
 
-const images = [
-  "src/assets/manuka-honey-umf24-250g-carousel-1.png",
-  "src/assets/manuka-honey-umf24-250g-carousel-2.png",
-  "src/assets/manuka-honey-umf24-250g-carousel-3.png",
-];
+const images = [img1, img2, img3];
 
 const GalleryViewer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,7 +34,7 @@ const GalleryViewer = () => {
       {/* Left Arrow */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 top-1/6 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-200"
+        className="absolute left-2 top-1/8 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-200"
       >
         <FaChevronLeft size={20} />
       </button>
@@ -43,7 +42,7 @@ const GalleryViewer = () => {
       {/* Right Arrow */}
       <button
         onClick={nextSlide}
-        className="absolute right-2 top-1/6 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-200"
+        className="absolute right-2 top-1/8 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-200"
       >
         <FaChevronRight size={20} />
       </button>
@@ -67,11 +66,11 @@ const GalleryViewer = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube-nocookie.com/embed/vnaXEMhXddE?autohide=1&rel=0&autoplay=0&playsinline=1&iv_load_policy=3&modestbranding=1&controls=0&showinfo=0&disablekb=1&enablejsapi=1"
+          src="https://www.youtube-nocookie.com/embed/vnaXEMhXddE?autoplay=0&controls=0&rel=0&modestbranding=1&iv_load_policy=3&showinfo=0"
           title="YouTube video"
           frameBorder="0"
-          className="rounded-lg w-full h-full"
           allow="autoplay; fullscreen; encrypted-media"
+          className="rounded-lg"
         />
       </div>
 

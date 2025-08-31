@@ -1,11 +1,11 @@
-import React from "react";
+import color_round_icon from "../assets/color-leaves.png";
 
 const RewardPoints = () => {
   return (
     <div className="flex items-start sm:items-center gap-4 bg-[#fbf9f6] p-4 rounded-lg mt-5">
       {/* Icon */}
       <img
-        src={"src/assets/color-leaves.png"}
+        src={color_round_icon}
         alt="Reward Leaves Icon"
         className="w-8 h-8 object-contain rounded-full"
       />

@@ -1,4 +1,10 @@
 import { FaHeart } from "react-icons/fa";
+import accred_1 from "../assets/accreditation-1.png";
+import accred_2 from "../assets/accreditation-2.png";
+import accred_3 from "../assets/accreditation-3.png";
+import accred_4 from "../assets/accreditation-4.png";
+import accred_5 from "../assets/accreditation-5.png";
+import accred_6 from "../assets/accreditation-6.png";
 
 const ProductInfo = () => {
   return (
@@ -25,32 +31,32 @@ const ProductInfo = () => {
       {/* Row 3: Accreditation Images */}
       <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 mt-4">
         <img
-          src="src/assets/accreditation-1.png"
+          src={accred_1}
           alt="Accred 1"
           className="h-20 object-contain mx-auto"
         />
         <img
-          src="src/assets/accreditation-2.png"
+          src={accred_2}
           alt="Accred 2"
           className="h-20 object-contain mx-auto"
         />
         <img
-          src="src/assets/accreditation-3.png"
+          src={accred_3}
           alt="Accred 3"
           className="h-20 object-contain mx-auto"
         />
         <img
-          src="src/assets/accreditation-4.png"
+          src={accred_4}
           alt="Accred 4"
           className="h-20 object-contain mx-auto"
         />
         <img
-          src="src/assets/accreditation-5.png"
+          src={accred_5}
           alt="Accred 5"
           className="h-20 object-contain mx-auto"
         />
         <img
-          src="src/assets/accreditation-6.png"
+          src={accred_6}
           alt="Accred 6"
           className="h-20 object-contain mx-auto"
         />

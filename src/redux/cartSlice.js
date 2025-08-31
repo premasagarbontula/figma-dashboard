@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import img1 from "../assets/manuka-honey-umf24-250g-carousel-1.png";
 
 const initialState = {
   items: [],
@@ -10,12 +11,15 @@ const cartSlice = createSlice({
   reducers: {
     addItem: (state, action) => {
       const existing = state.items.find((i) => i.id === action.payload.id);
+
       if (existing) {
         existing.quantity += action.payload.quantity ?? 1;
+        existing.image = img1;
       } else {
         state.items.push({
           ...action.payload,
           quantity: action.payload.quantity ?? 1,
+          image: img1,
         });
       }
     },

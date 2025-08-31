@@ -1,32 +1,18 @@
 import { useState } from "react";
 import { FaChevronDown, FaPlus } from "react-icons/fa";
 
+import honey20 from "../assets/manuka-honey-umf24-250g-carousel-2.png";
+import honey24 from "../assets/manuka-honey-umf24-250g-carousel-1.png";
+import spoon from "../assets/spoon.png";
+
 const bundleItems = [
-  {
-    id: 1,
-    image: "src/assets/manuka-honey-umf24-250g-carousel-2.png",
-    title: "UMF 20+",
-    options: ["250g", "500g", "1kg"],
-  },
-  {
-    id: 2,
-    image: "src/assets/manuka-honey-umf24-250g-carousel-1.png",
-    title: "UMF 24+",
-    options: ["250g", "500g", "1kg"],
-  },
-  {
-    id: 3,
-    image: "src/assets/spoon.png",
-    title: "Wooden Spoon",
-    options: [],
-  },
+  { id: 1, image: honey20, title: "UMF 20+", options: ["250g", "500g", "1kg"] },
+  { id: 2, image: honey24, title: "UMF 24+", options: ["250g", "500g", "1kg"] },
+  { id: 3, image: spoon, title: "Wooden Spoon", options: [] },
 ];
 
 const BeautyBundleCard = () => {
-  const [selectedGrams, setSelectedGrams] = useState({
-    1: "250g",
-    2: "250g",
-  });
+  const [selectedGrams, setSelectedGrams] = useState({ 1: "250g", 2: "250g" });
 
   return (
     <div className="bg-gray-200 text-[#4a4a4a] p-6 rounded-xl max-w-5xl mx-auto mt-8">
@@ -34,7 +20,6 @@ const BeautyBundleCard = () => {
         Beauty Bundle
       </h3>
 
-      {/* Bundle Items */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-6">
         {bundleItems.map((item, idx) => (
           <div key={item.id} className="flex flex-col items-center relative">
@@ -47,7 +32,6 @@ const BeautyBundleCard = () => {
               {item.title}
             </span>
 
-            {/* Dropdown for grams if options exist */}
             {item.options.length > 0 && (
               <div className="relative w-24 md:w-28">
                 <select
@@ -70,19 +54,15 @@ const BeautyBundleCard = () => {
               </div>
             )}
 
-            {/* Plus sign between items (only on md+ row layout) */}
             {idx < bundleItems.length - 1 && (
-              <FaPlus className="hidden md:block absolute right-[-20px] top-1/3 text-xl text-gray-600" />
-            )}
-
-            {/* On mobile: show plus below items */}
-            {idx < bundleItems.length - 1 && (
-              <FaPlus className="block md:hidden mt-2 text-lg text-gray-600" />
+              <>
+                <FaPlus className="hidden md:block absolute right-[-20px] top-1/3 text-xl text-gray-600" />
+                <FaPlus className="block md:hidden mt-2 text-lg text-gray-600" />
+              </>
             )}
           </div>
         ))}
 
-        {/* Price & Add to Cart */}
         <div className="flex flex-col items-center text-center md:ml-6 mt-6 md:mt-0">
           <div className="flex flex-col md:flex-row items-center gap-2 mb-4">
             <span className="line-through text-sm md:text-base">

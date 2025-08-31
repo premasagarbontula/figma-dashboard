@@ -1,10 +1,13 @@
 import { useState } from "react";
+import variant_1 from "../assets/variant-1.png";
+import variant_2 from "../assets/variant-2.png";
+import variant_3 from "../assets/variant-3.png";
 
 const VariantSelector = () => {
   const variants = [
-    { label: "250g", image: "src/assets/variant-1.png" },
-    { label: "500g", image: "src/assets/variant-2.png" },
-    { label: "500g + 12cm spoon", image: "src/assets/variant-3.png" },
+    { label: "250g", image: variant_1 },
+    { label: "500g", image: variant_2 },
+    { label: "500g + 12cm spoon", image: variant_3 },
   ];
 
   const [selected, setSelected] = useState(0);

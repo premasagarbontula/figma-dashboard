@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { FaUser, FaSearch, FaBars, FaTimes } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
 import { useSelector } from "react-redux";
+import logo from "../assets/NZ_Honey_Co_Logo.png";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ export default function Navbar() {
   const navItems = ["Shop", "Explore", "About", "Rewards", "Contact"];
 
   return (
-    <nav className="w-full px-4 md:px-16 py-3 flex items-center justify-between relative bg-[#fbf9f6] sticky top-0 z-50 shadow-md">
+    <nav className="w-full px-4 md:px-16 py-3 flex items-center justify-between bg-[#fbf9f6] sticky top-0 z-50 shadow-md">
       {/* Mobile Hamburger */}
       <div className="flex items-center md:hidden">
         <button
@@ -28,15 +29,15 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Left */}
-      <div className="hidden md:flex items-center gap-12">
+      <div className="hidden md:flex items-center gap-4 md:gap-2 lg:gap-12">
         <NavLink
           to="/special"
-          className="px-4 py-2 text-[#4a4a4a] rounded-full font-semibold bg-yellow-400 hover:bg-yellow-500 transition cursor-pointer"
+          className="px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base text-[#4a4a4a] rounded-full font-semibold bg-yellow-400 hover:bg-yellow-500 transition cursor-pointer w-full sm:w-auto text-center"
         >
           WHICH MANUKA IS FOR ME?
         </NavLink>
 
-        <ul className="hidden md:flex items-center gap-12">
+        <ul className="hidden md:flex items-center gap-2 md:gap-6 lg:gap-12">
           {navItems.slice(0, 2).map((item) => (
             <li key={item}>
               <NavLink
@@ -58,16 +59,12 @@ export default function Navbar() {
 
       {/* Logo */}
       <Link to="/" className="flex items-center mx-auto md:mx-0">
-        <img
-          src="src/assets/NZ_Honey_Co_Logo.png"
-          alt="Brand Logo"
-          className="h-20 w-auto"
-        />
+        <img src={logo} alt="Brand Logo" className="h-20 w-auto" />
       </Link>
 
       {/* Desktop Right Icons */}
-      <div className="flex items-center gap-5">
-        <ul className="hidden md:flex items-center gap-12 mr-10">
+      <div className="flex items-center gap-2 sm:gap-4 md:gap-5">
+        <ul className="hidden md:flex items-center gap-2 lg:gap-12 mr-10">
           {navItems.slice(2).map((item) => (
             <li key={item}>
               <NavLink

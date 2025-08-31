@@ -35,7 +35,6 @@ const Cart = () => {
                   <p className="text-[#4a4a4a]">Quantity: {item.quantity}</p>
                 </div>
               </div>
-              <p className="font-semibold text-[#4a4a4a]">${item.price}</p>
             </div>
           ))}
 
