@@ -8,7 +8,21 @@ You can view the deployed project here:
 👉 [Figma Dashboard Demo](https://figma-dashboard-beta.vercel.app/)
 
 ---
+## Screenshots
 
+**Desktop View1**
+<img width="1822" height="852" alt="image" src="https://github.com/user-attachments/assets/2c1ee313-f404-4fba-9c35-21e6e4ea83aa" />
+
+**Desktop View2**
+<img width="1881" height="865" alt="image" src="https://github.com/user-attachments/assets/a63d567e-46d7-4477-94af-eed0403d9dbc" />
+
+**Mobile View1**
+<img width="295" height="598" alt="image" src="https://github.com/user-attachments/assets/43e84385-b80a-49e3-b7ae-9b224cd58a84" />
+
+**Mobile View2**
+<img width="253" height="578" alt="image" src="https://github.com/user-attachments/assets/3ffffaee-1c74-4933-ada9-9f1f29ae9f8a" />
+
+---
 ## **Table of Contents**
 
 - [Overview](#overview)
