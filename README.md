@@ -2,6 +2,11 @@
 
 This is a React-based e-commerce shopping application built from a Figma design, featuring a Shop (product detail) page, variant selectors, payment options, cart management, and more.
 
+## Live Demo
+
+You can view the deployed project here:  
+👉 [Figma Dashboard Demo](https://figma-dashboard-beta.vercel.app/)
+
 ---
 
 ## **Table of Contents**
